@@ -27,3 +27,4 @@ Para compilar o código, utilize o GCC ou qualquer outro compilador C. No termin
 
 ```bash
 gcc pseudo_objeto_3.c -o pseudo_objeto
+```
