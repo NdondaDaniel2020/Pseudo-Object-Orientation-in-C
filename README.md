@@ -4,8 +4,8 @@ Este projeto demonstra uma abordagem de Pseudo-Orientação a Objetos em C, util
 
 ## Estrutura do Projeto
 
-- **pseudo_objeto.h**: Arquivo de cabeçalho contendo a definição da estrutura `t_person` e as bibliotecas necessárias.
-- **pseudo_objeto_3.c**: Arquivo principal do projeto que implementa a estrutura `t_person` e demonstra como criar e utilizar objetos de maneira pseudo-orientada a objetos.
+- **pseudo_object.h**: Arquivo de cabeçalho contendo a definição da estrutura `t_person` e as bibliotecas necessárias.
+- **pseudo_object.c**: Arquivo principal do projeto que implementa a estrutura `t_person` e demonstra como criar e utilizar objetos de maneira pseudo-orientada a objetos.
 
 ## Estrutura `t_person`
 
@@ -26,5 +26,5 @@ A estrutura `t_person` representa uma pessoa e inclui os seguintes campos:
 Para compilar o código, utilize o GCC ou qualquer outro compilador C. No terminal, execute o seguinte comando:
 
 ```bash
-gcc pseudo_objeto_3.c -o pseudo_objeto
+gcc pseudo_object.c -o pseudo_object
 ```
