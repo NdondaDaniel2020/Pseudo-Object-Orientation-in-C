@@ -10,11 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pseudo_objeto.h"
+#include "pseudo_object.h"
 
 void	person_print(t_person *self)
 {
-	printf("Name: %s Age: %d Height: %d", self->name, self->age, self->height);
+	printf("Name: %s Age: %d Height: %d\n", self->name, self->age, self->height);
 }
 
 t_person	*new_person(char *name, uint8_t age, uint8_t height)
@@ -22,6 +22,8 @@ t_person	*new_person(char *name, uint8_t age, uint8_t height)
 	t_person	*self;
 
 	self = malloc(sizeof(t_person));
+	if (self == NULL)
+		return (NULL);
 	strcpy(self->name, name);
 	self->age = age;
 	self->height = height;
@@ -29,11 +31,16 @@ t_person	*new_person(char *name, uint8_t age, uint8_t height)
 	return (self);
 }
 
-void	main(void)
+int	main(void)
 {
 	t_person	*person;
 
 	person = (t_person *)new_person("Fabio", 43, 173);
-	person->show(person);
-	return ;
+	if (person != NULL)
+	{
+		person->show(person);
+		free(person);
+	}
+	return (0);
 }
+
